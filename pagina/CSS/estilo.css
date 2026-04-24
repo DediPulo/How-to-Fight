@@ -1,0 +1,1898 @@
+
+
+
+/* Main */
+main {
+    background-color: var(--dark-bg);
+    padding: 10px;
+    margin: 5%;
+    flex: 1;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+/*======= LOGIN ======= */
+
+.login-container {
+    max-width: 450px; 
+    margin: 50px auto;
+    background-color: #212529;
+    padding: 30px;
+    border-radius: 10px;
+}
+
+/* Estilo das Labels */
+.label-control {
+    display: block;
+    margin-bottom: 8px;
+    font-size: 1.0rem;
+    color: #ffffff;
+    width: 300px;
+    transform: translateX(-30px) translateY(-20px);
+    
+}
+
+
+/* Estilo dos input */
+.input-control {
+    display: block;
+    margin-bottom: 8px;
+    font-size: 1.0rem;
+    color: #000000;
+    width: 300px;
+    transform: translateX(-30px) translateY(-20px);
+    
+}
+
+.login-title {
+    font-size: 1.4rem;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 40px;
+    color: var(--primary-color);
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+fieldset {
+    border: 2px solid #ff4444;
+    border-radius: 6px;
+    padding: 20px 70px; /* Estica na vertical */
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+legend {
+    width: auto;
+    float: none;
+    margin: 0 auto; /* Centraliza o legend na borda */
+    padding: 0 15px;
+    color: #ff4444;
+    font-weight: bold;
+    font-size: 1.4rem;
+    white-space: nowrap;
+    background-color: transparent; /* O navegador já corta a borda sozinho */
+}
+
+/* Garante que os inputs não fiquem minúsculos */
+.form-control {
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.button-group {
+    display: flex;
+    flex-direction: column; /* Empilha o texto e o botão */
+    align-items: center;    /* Centraliza os dois */
+    gap: 10px;              /* Espaço entre o texto e o botão */
+    margin-top: 20px;
+}
+
+.button-group p {
+    margin: 0;             /* Remove margens extras do parágrafo */
+    color: white;
+}
+
+
+/*======= CADASTRO ======= */
+
+.cadastro-container2 {
+    max-width: 850px; /* Diminua esse valor para espremer mais o cinza */
+    max-height: 600px;
+    margin: 50px auto;
+    background-color: #212529;
+    padding: 30px;
+    border-radius: 10px;
+}
+
+.cadastro-container {
+    max-width: 350px; /* Diminua esse valor para espremer mais o cinza */
+    max-height: 300px;
+    margin: 50px auto;
+    background-color: #212529;
+    padding: 30px;
+    border-radius: 10px;
+}
+
+.cadastro-title {
+  font-size: 1.5rem;
+  color: var(--secondary-color);
+  margin-bottom: 20px;
+}
+
+.label-control2 {
+  display: block;
+  margin-bottom: 8px;
+  font-size: 1.4rem;
+  color: #ffffff;
+  width: 300px;
+  transform: translateX(-60px) translateY(-90px);
+}
+
+.input-control2 {
+  display: block;
+  margin-bottom: 8px;
+  font-size: 1rem;
+  color: #000000;
+  width: 400px;
+  height: 30px;
+  transform: translateX(-60px) translateY(-90px);
+}
+
+.btn-signup2 {
+  background-color: var(--primary-color);
+  color: #fff;
+  padding: 10px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  width: 100%;        /* botão ocupa toda a largura */
+  font-weight: bold;
+  transition: background 0.3s ease;
+  transform: translateX(0px) translateY(-80px);
+}
+
+.checkbox-control {
+  transform: translateX(-50px) translateY(-90px);
+}
+
+.erro-msg {
+    font-size: 0.9rem;
+    color: #ff4d4d;
+    opacity: 0;
+    transition: opacity 0.3s ease, transform 0.3s ease;
+}
+.erro-msg.show {
+    opacity: 1;
+}
+
+#erro-senha {
+    position: relative;
+    top: 30px; /* começa mais embaixo */
+    opacity: 0;
+    transition: opacity 0.3s ease, top 0.3s ease;
+}
+
+#erro-senha.show {
+    opacity: 1;
+    top: -90px; /* sobe e permanece */
+    left: -60px
+}
+
+#erro-confirmar {
+    position: relative;
+    top: 30px; /* começa mais embaixo */
+    opacity: 0;
+    transition: opacity 0.3s ease, top 0.3s ease;
+}
+
+#erro-confirmar.show {
+    opacity: 1;
+    top: -95px; /* sobe e permanece */
+    left: -60px
+}
+
+#erro-nick {
+    position: relative;
+    top: 30px; /* começa mais embaixo */
+    opacity: 0;
+    transition: opacity 0.3s ease, top 0.3s ease;
+}
+#erro-nick.show {
+    opacity: 1;
+    top: -90px; /* sobe e permanece */
+    left: -50px
+}
+
+.msg-sucesso, .msg-erro {
+  position: fixed;
+  top: 70px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 9999;
+
+  padding: 12px 20px;
+  border-radius: 6px;
+  font-weight: bold;
+
+  transition: opacity 0.8s ease; /* animação suave */
+  opacity: 1; /* começa visível */
+}
+
+.msg-sucesso {
+  background-color: #dc3545;
+  color: #fff;
+}
+
+.msg-erro {
+  background-color: #dc3545;
+  color: #ffffff;
+}
+
+.accordion-button
+{
+    color: rgb(255, 255, 255);
+    background-color: #333435;
+}
+
+.accordion-button:focus {
+    box-shadow: none;
+  }
+
+  /* Styling for the active (open) accordion button */
+.accordion-button:not(.collapsed) {
+    background-color: #333435;
+    color: white;
+    /* Add other styles as needed */
+}
+
+.coluna-texto {
+    flex: 1; /* Faz a coluna ocupar metade do espaço (50%) */
+    background-color: #212529;
+    
+    /* Centraliza o conteúdo (o h1) vertical e horizontalmente */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px;
+    
+
+}
+
+.coluna-texto h1 {
+    font-size: 3.5rem; /* Tamanho da fonte */
+    color: #ffffff; /* Cor do texto (cinza escuro) */
+    font-weight: 400; /* Peso da fonte */
+}
+
+/* --- Coluna da Direita (Imagem) --- */
+.coluna-imagem {
+    flex: 1; /* Faz a coluna ocupar a outra metade do espaço (50%) */
+    background-color: #212529;
+}
+
+.coluna-imagem img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Faz a imagem cobrir todo o espaço da coluna sem distorcer */
+    background-color: #212529;
+}
+
+strong {
+    font-size: 25px;
+    color: white
+}
+
+.container2 {
+    display: flex;
+    width: 100%;
+    background-color: #4b4f53;
+}
+
+h3 {
+    font-size: 40px;
+    font-weight: bold;
+    color: white;
+}
+
+pre{
+    font-size: 20px;
+    font-weight: bold;
+    color: white;
+}
+
+/* 1. Define o container como ponto de referência para os filhos */
+.input-container {
+    position: relative;
+}
+
+/* 2. Estiliza a mensagem e a posiciona */
+.validation-message {
+    /* Faz o elemento flutuar */
+    position: absolute; 
+    
+    /* Move para o canto superior direito do container */
+    top: 50%; /* Centraliza verticalmente */
+    right: 10px; /* Afasta 10px da borda direita do input */
+    
+    /* Ajuste fino para o centro vertical (metade da altura do texto) */
+    transform: translateY(-50%); 
+    
+    /* Estilos visuais */
+    font-size: 0.8em; /* Deixa o texto menor */
+    padding: 2px 5px; 
+    pointer-events: none; /* Garante que o texto não atrapalhe o clique no input */
+
+}
+
+
+.brand-move h2 {
+    font-size: 25px;
+    font-weight: bold;
+    color: white;
+    margin:0;
+    transform: translateX(-20px);
+}
+
+.brand-move{
+  display: flex;
+  align-items: center;
+  gap: 1px;         
+  transform: translateX(100px);    /* move o icone + texto do meio pra direita ou esquerda */
+  
+}
+
+
+/* ========== HEADER ========== */
+:root {
+    --primary-color: #44ff7f;
+    --secondary-color: #ff9900;
+    --dark-bg: #0a0a0a;
+    --card-bg: #1a1a1a;
+    --text-secondary: #b0b0b0;
+}
+
+.htf-header {
+    background: linear-gradient(135deg, var(--dark-bg) 0%, var(--card-bg) 100%);
+    border-bottom: 3px solid var(--primary-color);
+    padding: 0.5rem 0;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 4px 20px rgba(255, 68, 68, 0.2);
+    height: 80px;  /* ← FIXA A ALTURA */
+}
+
+.header-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+    height: 100%;  /* ← PREENCHE A ALTURA */
+}
+
+.logo-brand {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    cursor: pointer;
+    height: 100%;  /* ← Preenche a altura do header */
+}
+
+.logo-brand img {
+    width: 300px;
+    height: 300px;
+    object-fit: contain;
+    align-self: center;  /* ← Centraliza verticalmente */
+    transform: translateY(25px) translateX(150px);
+}
+
+.header-nav {
+    display: flex;
+    gap: 2rem;
+}
+
+/* ============ PRIMEIRA SESSÃO ============ */
+.hero-section {
+    background: linear-gradient(135deg, rgba(255, 68, 68, 0.1) 0%, rgba(255, 153, 0, 0.1) 100%);
+    padding: 80px 20px;
+    text-align: center;
+    border-bottom: 2px solid var(--primary-color);
+    margin-bottom: 40px;
+}
+
+.hero-content h2 {
+    font-size: 3rem;
+    font-weight: 700;
+    margin-bottom: 20px;
+    background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.hero-content p {
+    font-size: 1.2rem;
+    color: var(--text-secondary);
+    margin-bottom: 30px;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.btn-primary-htf {
+    padding: 12px 30px;
+    background: var(--primary-color);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-weight: 700;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.btn-primary-htf:hover {
+    background: var(--secondary-color);
+    transform: scale(1.05);
+    box-shadow: 0 10px 25px rgba(255, 68, 68, 0.5);
+}
+
+
+/* ============ ABOUT ============ */
+.about-title {
+    font-size: 2.5rem;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 40px;
+    color: var(--primary-color);
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.about-text {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    color: var(--text-secondary);
+    margin-bottom: 20px;
+    text-align: justify;
+    border-left: 4px solid var(--primary-color);
+    padding-left: 20px;
+}
+
+/* ============ NAV ============ */
+
+.nav-link {
+    color: var(--text-secondary);
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.nav-link:hover {
+    color: var(--primary-color);
+}
+
+.header-actions {
+    display: flex;
+    gap: 1rem;
+}
+
+.btn-login, .btn-signup {
+    padding: 0.7rem 1.5rem;
+    border: none;
+    border-radius: 5px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.btn-login {
+    background: transparent;
+    color: var(--primary-color);
+    border: 2px solid var(--primary-color);
+}
+
+.btn-login:hover {
+    background: var(--primary-color);
+    color: white;
+}
+
+.btn-signup {
+    background: var(--primary-color);
+    color: white;
+}
+
+.btn-signup:hover {
+    background: var(--secondary-color);
+}
+
+
+
+/* ========== FOOTER ========== */
+.htf-footer {
+    background: linear-gradient(135deg, var(--dark-bg) 0%, var(--card-bg) 100%);
+    border-top: 3px solid var(--primary-color);
+    padding: 60px 20px 20px;
+    margin-top: auto;
+}
+
+.footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 250px 200px 200px 250px; 
+    gap: 60px;  
+    margin-bottom: 40px;
+    justify-content: center;  
+}
+
+.footer-column {
+    text-align: left; 
+}
+
+.footer-column h5 {
+    color: var(--primary-color);
+    margin-bottom: 15px;
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 0.9rem;
+    letter-spacing: 1px;
+    text-align: left;
+}
+
+.footer-logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 15px;
+}
+
+.footer-logo i {
+    font-size: 2rem;
+    color: var(--primary-color);
+}
+
+.footer-logo h4 {
+    font-size: 1.3rem;
+    font-weight: 700;
+    margin: 0;
+    color: var(--primary-color);
+}
+
+.tagline {
+    color: var(--secondary-color);
+    font-style: italic;
+    font-size: 0.95rem;
+}
+
+.footer-links {
+    list-style: none;
+}
+
+.footer-links li {
+    margin-bottom: 10px;
+}
+
+.footer-links a {
+    color: var(--text-secondary);
+    text-decoration: none;
+    transition: all 0.3s ease;
+    display: inline-block;
+}
+
+.footer-links a:hover {
+    color: var(--primary-color);
+    transform: translateX(5px);
+}
+
+.social-icons {
+    display: flex;
+    gap: 15px;
+}
+
+.social-icons a {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--card-bg);
+    border: 2px solid var(--primary-color);
+    border-radius: 50%;
+    color: var(--primary-color);
+    transition: all 0.3s ease;
+}
+
+.social-icons a:hover {
+    background: var(--primary-color);
+    color: white;
+    transform: translateY(-5px);
+}
+
+.footer-bottom {
+    text-align: center;
+    padding-top: 20px;
+    border-top: 1px solid var(--card-bg);
+    color: var(--text-secondary);
+    font-size: 0.9rem;
+}
+
+
+/* ============ VARIÁVEIS DE COR ============ */
+:root {
+    --primary-color: #ff4444;      /* Vermelho vibrante */
+    --secondary-color: #ff9900;    /* Laranja */
+    --dark-bg: #0a0a0a;            /* Preto profundo */
+    --card-bg: #1a1a1a;            /* Cinza escuro */
+    --text-primary: #ffffff;
+    --text-secondary: #b0b0b0;
+    --accent: #00ff88;             /* Verde neon (opcional) */
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--dark-bg);
+    color: var(--text-primary);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    height: 100%;
+}
+
+
+#img-tekke {
+    width: 2000px; 
+    height: auto; /* Permite que a altura se ajuste à imagem */
+    margin: 0 auto; /* Centraliza a div horizontalmente e remove margens verticais extras */
+    line-height: 0; /* Remove pequenos espaços de respiro de elementos inline */
+}
+
+#img-tekke img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.container-card5 {
+  display: flex;
+  justify-content: center; /* centraliza o bloco inteiro */
+  align-items: center;     /* centraliza verticalmente */
+  flex-wrap: wrap;
+  gap: 20px;
+  padding: 20px;
+}
+
+.img-tekke2 {
+  display: flex;
+  justify-content: center; /* centraliza a imagem dentro da div */
+  align-items: center;
+}
+
+.ms-md-2.ms-lg-5 {
+  text-align: center; /* centraliza todo o texto */
+}
+
+.main-sobre {
+    background-color: var(--dark-bg);
+    flex: 1;
+}
+
+.modulos {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center; /* centraliza os cards */
+  padding: 20px;
+}
+
+.modulo-card {
+  background: var(--card-bg);
+  border: 2px solid var(--primary-color);
+  border-radius: 10px;
+  padding: 20px;
+  width: 350px;
+  text-align: center;
+  color: #fff;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+  transition: transform 0.2s ease;
+}
+
+.modulo-card:hover {
+  transform: scale(1.05); /* efeito de destaque */
+}
+
+.modulo-card h3 {
+  margin-bottom: 30px;
+  color:#ff4444 ;
+}
+
+legend.cadastro {
+    width: auto;
+    float: none;
+    margin: 0 auto; /* Centraliza o legend na borda */
+    padding: 0 15px;
+    color: #ff4444;
+    font-weight: bold;
+    font-size: 3.1rem;
+    white-space: nowrap;
+    background-color: transparent; /* O navegador já corta a borda sozinho */
+}
+
+/* sessão */
+
+.btn-perfil {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  background-color: #222;
+  color: #fff;
+  border: none;
+  border-radius: 50px;
+  padding: 12px 20px;
+  font-weight: bold;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.3s;
+
+  height: 55px;       /* altura fixa */
+  max-height: 55px;
+  width: 180px;       /* maior que o botão */
+  max-width: 180px;
+  overflow: hidden;   /* corta o excesso */
+}
+
+
+.btn-perfil img {
+  width: 75px;       /* maior que o botão */
+  height: 100px;
+  border-radius: 50%;
+  object-fit: fill;  /* preenche e corta */
+  flex-shrink: 0;     /* impede que seja comprimida */
+}
+
+
+.btn-perfil:hover {
+    background-color: #333;
+}
+
+.btn-logout {
+    padding: 0.7rem 1.5rem;
+    border: none;
+    background-color: #ff4444;
+    color: #ffffff;
+    border-radius: 5px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+/* ============ CONTATO ============ */
+
+/* Seção de contato */
+.hero-section, .contact-section {
+  background-color: #111;
+  color: #fff;
+  padding: 40px;
+  border-radius: 8px;
+  margin-bottom: 40px;
+  box-shadow: 0 0 15px rgba(255, 0, 0, 0.3);
+}
+
+/* Título */
+.contact-section h2 {
+  color: #ff4d4d;
+  margin-bottom: 20px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+/* Formulário */
+.contact-section form {
+  background-color: #1a1a1a;
+  padding: 25px;
+  border-radius: 8px;
+  border: 1px solid #333;
+}
+
+.contact-section label {
+  color: #ccc;
+  font-weight: 500;
+}
+
+.contact-section input,
+.contact-section textarea {
+  background-color: #222;
+  border: 1px solid #444;
+  color: #fff;
+}
+
+.contact-section input:focus,
+.contact-section textarea:focus {
+  border-color: #ff4d4d;
+  box-shadow: 0 0 5px rgba(255, 77, 77, 0.5);
+}
+
+/* Botão */
+.contact-section .btn-primary {
+  background-color: #007bff; /* azul estilo FAQ */
+  border: none;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.contact-section .btn-primary:hover {
+  background-color: #0056b3;
+}
+
+/* Ajuste geral */
+.container-card img {
+  max-width: 100%;
+  border-radius: 8px;
+  box-shadow: 0 0 15px rgba(0,0,0,0.6);
+}
+
+
+/* ============ PRIVACIDADE ============ */
+
+.privacy-main {
+  background-color: var(--dark-bg);
+  color: #fff;
+  padding: 60px 20px;
+  min-height: 80vh;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+/* Caixa da política */
+.privacy-section {
+  background-color: #1a1a1a;
+  border: 1px solid #333;
+  border-radius: 8px;
+  padding: 40px;
+  max-width: 800px;
+  width: 100%;
+  box-shadow: 0 0 15px rgba(255, 0, 0, 0.3);
+}
+
+/* Títulos */
+.privacy-section h2 {
+  color: #ff4d4d;
+  font-weight: bold;
+  text-transform: uppercase;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.privacy-section h4 {
+  color: #ff4d4d;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+/* Listas */
+.privacy-section ul {
+  list-style: disc;
+  padding-left: 20px;
+}
+
+.privacy-section li {
+  margin-bottom: 8px;
+}
+
+/* ============ TERMOS ============ */
+
+/* MAIN dos termos */
+.terms-main {
+  background-color: var(--dark-bg);
+  color: #fff;
+  padding: 60px 20px;
+  min-height: 80vh;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 40px; /* espaço entre os quadrados */
+  flex-wrap: wrap; /* permite quebrar em telas menores */
+}
+
+/* Cada bloco */
+.terms-section {
+  background-color: #1a1a1a;
+  border: 1px solid #333;
+  border-radius: 8px;
+  padding: 40px;
+  flex: 1 1 400px;   /* ocupa metade da largura, mas se adapta */
+  max-width: 600px;  /* limite pra não ficar gigante */
+  box-shadow: 0 0 15px rgba(255, 0, 0, 0.3);
+}
+
+/* Títulos */
+.terms-section h2 {
+  color: #ff4d4d;
+  font-weight: bold;
+  text-transform: uppercase;
+  border-bottom: 2px solid #ff4d4d;
+  padding-bottom: 10px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+
+/* ============ FAQ ============ */
+
+/* Título do FAQ */
+.faq-main h1 {
+  color: #ff4d4d;
+  text-align: center;
+  margin-bottom: 30px;
+  font-weight: bold;
+  text-transform: uppercase;
+  border-bottom: 3px solid #ff4d4d; /* linha vermelha */
+  padding-bottom: 10px;
+}
+
+/* Accordion */
+.accordion-item {
+  border: 1px solid #333;
+  margin-bottom: 15px;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.accordion-button {
+  background-color: #1a1a1a;
+  color: #fff;
+  font-weight: 600;
+  font-size: 1.05rem; /* aumenta um pouco a fonte */
+}
+
+.accordion-button:not(.collapsed) {
+  background-color: #ff4d4d;
+  color: #fff;
+}
+
+.accordion-body {
+  background-color: #222;
+  color: #ddd;
+  padding: 20px;
+  line-height: 1.6;
+  text-align: justify;
+  font-size: 1rem; /* aumenta fonte geral */
+}
+
+/* Strong dentro do corpo */
+.accordion-body strong {
+  font-size: 0.95rem; /* menor que o texto normal */
+  color: #fff;
+  font-weight: 500;   /* menos pesado */
+}
+
+/* ============ PERFIL ============ */
+.profile-main {
+  background-color: #111;
+  color: #fff;
+  padding: 60px 20px;
+  min-height: 80vh;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+/* Card maior */
+.profile-card {
+  display: flex;          /* lado a lado */
+  gap: 30px;
+  background-color: #1a1a1a;
+  border: 1px solid #333;
+  border-radius: 8px;
+  padding: 30px;
+  max-width: 900px;
+  width: 100%;
+  box-shadow: 0 0 15px rgba(255, 0, 0, 0.3);
+  min-height: 700px; /* ADICIONA ISSO */
+  align-items: stretch; /* faz os filhos terem a mesma altura */
+}
+
+.profile-sidebar {
+  width: 220px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+}
+
+
+/* Avatar */
+.profile-avatar {
+  width: 120px;
+  height: 120px;
+  margin: 0 auto 20px auto;
+  border: 2px solid #ff4d4d;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 0 10px rgba(255, 0, 0, 0.4);
+}
+
+
+.profile-avatar img {
+  width: 180px;
+  height: 180px;
+  transform: translate(-35px, -45px);
+  object-fit: fill;
+}
+
+.profile-actions {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-top: 10px;
+  flex: 1;
+}
+
+.action-item {
+  color: #ddd;
+  font-weight: 600;
+  cursor: pointer;
+  position: relative;
+  padding: 5px 0;
+}
+
+.action-item.active {
+  color: #ff4d4d;
+}
+
+.action-item.active::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -2px;
+  width: 100%;
+  height: 2px;
+  background-color: #ff4d4d;
+}
+
+/* Área de conteúdo (direita) */
+.profile-content {
+  flex: 1;
+  min-height: 500px; /* altura mínima fixa */
+}
+
+/* Abas */
+.tab-content {
+  display: none;
+}
+
+.tab-content.active {
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+}
+
+/* Card menor (informações do perfil) */
+.profile-info {
+  background-color: #222;
+  border: 1px solid #333;
+  border-radius: 8px;
+  padding: 30px;
+}
+
+.profile-info h2 {
+  color: #ff4d4d;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin-bottom: 30px;
+}
+
+/* Caixa da aba Ícone */
+.icon-box {
+  background-color: #222;
+  border: 1px solid #333;
+  border-radius: 8px;
+  padding: 30px;
+  min-height: 100%; /* garante altura parecida com perfil */
+}
+
+.icon-box h2 {
+  color: #ff4d4d;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin-bottom: 30px;
+}
+
+/* Avatares dentro da aba ícone */
+.avatar-box {
+  display: flex;
+  gap: 15px;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.avatar-box img {
+  width: 100px;
+  height: 100px;
+  border-radius: 8px;
+  border: 2px solid transparent;
+  cursor: pointer;
+  transition: border 0.3s, transform 0.2s;
+}
+
+.avatar-box img.selected {
+  border: 2px solid #ff4d4d;
+  box-shadow: 0 0 10px rgba(255,0,0,0.5);
+}
+
+/* Caixa do botão */
+.button-box {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.btn-red {
+  background-color: #ff4d4d;
+  color: #fff;
+  border: none;
+  padding: 12px 20px;
+  font-weight: bold;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+
+.btn-atualizar {
+  background-color: #e63946; /* vermelho personalizado */
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  padding: 8px 20px;        /* aumenta altura e largura */
+  font-size: 16px;           /* texto maior */
+  font-weight: bold;         /* texto mais pesado */
+  width: 100%;               /* ocupa toda a largura */
+}
+
+.btn-atualizar:hover {
+  background-color: #ae3b3b; /* tom mais escuro no hover */
+}
+
+#btnDeletar {
+  margin-top: auto; /* empurra pro fim */
+  transform: none;  /* remove o translateY */
+}
+
+.admin-content {
+  background-color: #222;
+  border: 1px solid #333;
+  border-radius: 8px;
+  padding: 30px;
+  overflow-y: auto;
+}
+
+.admin-content h2 {
+  color: #ff4d4d;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin-bottom: 30px;
+}
+
+.profile-info,
+.icon-box,
+.admin-content {
+  flex: 1;
+  min-height: 440px;
+}
+
+
+/* ============ PERFIL ============ */
+/* Mensagem de alerta no perfil */
+#Senhamensagem {
+  position: fixed;
+  top: 70px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 9999;
+
+  padding: 12px 20px;
+  border-radius: 6px;
+  font-weight: bold;
+
+  transition: opacity 0.8s ease;
+  opacity: 0;          /* começa invisível */
+  display: none;       /* não ocupa espaço */
+
+  background-color: #dc3545;
+  color: #fff;
+}
+
+
+#msgSenha {
+  margin-top: 8px;   /* desce um pouco */
+  display: block;    /* garante que fique em linha separada */
+  color: red;        /* mantém só texto vermelho */
+}
+
+/* ============ DELETAR PERFIL ============ */
+
+/* fundo e texto do modal */
+.swal2-popup {
+  background: #1c1c1c !important;  /* fundo escuro */
+  color: #f5f5f5 !important;       /* texto claro */
+  border-radius: 10px;             /* cantos arredondados */
+}
+
+/* título */
+.swal2-title {
+  color: #e63946 !important;       /* vermelho pro título */
+  font-weight: bold;
+}
+
+/* botão confirmar */
+.swal2-confirm {
+  background-color: #e63946 !important; /* vermelho */
+  color: #fff !important;
+  border: none !important;
+  border-radius: 5px !important;
+}
+
+/* botão cancelar */
+.swal2-cancel {
+  background-color: #55544f !important; /* azul */
+  color: #fff !important;
+  border: none !important;
+  border-radius: 5px !important;
+}
+
+/* Ícone principal do alerta */
+.swal2-icon.swal2-warning {
+  color: #e63946 !important;       /* cor do traço do ícone */
+  border-color: #e63946 !important; /* cor da borda do círculo */
+}
+
+
+.profile-ranking {
+  color: #fff;
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 1.2rem;
+  letter-spacing: 2px;
+  margin: 4px 0 0;
+  padding-left: 18px;
+}
+
+
+/* ============ AVATARES ============ */
+
+/* Aba icone com tamanho igual ao perfil */
+#icone .icon-box {
+  background-color: #222;
+  border: 1px solid #333;
+  border-radius: 8px;
+  padding: 50px;
+  max-width: 900px;
+  width: 100%;
+  height: 555px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;  /* troca justify-content: space-between por isso */
+}
+
+#icone h2 {
+  color: #ff4d4d;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin-bottom: 30px;
+}
+
+.avatar-box {
+  display: flex;
+  gap: 15px;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.avatar-box img {
+  width: 100px;
+  height: 100px;
+  border-radius: 8px;
+  border: 2px solid transparent;
+  cursor: pointer;
+  transition: border 0.3s, transform 0.2s;
+}
+
+.avatar-box img:hover {
+  transform: scale(1.05);
+}
+
+.avatar-box img.selected {
+  border: 2px solid #ff4d4d;
+  box-shadow: 0 0 10px rgba(255,0,0,0.5);
+}
+
+.button-box {
+  text-align: center;
+  margin-top: auto; /* empurra o botão pro fim da caixa */
+}
+
+.btn-red {
+  background-color: #ff4d4d;
+  color: #fff;
+  border: none;
+  padding: 12px 20px;
+  font-weight: bold;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+#icone .icon-box form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  width: 100%;
+  flex: 1; /* ocupa o espaço disponível */
+  justify-content: space-between; /* avatares em cima, botão embaixo */
+}
+
+/* ============ CARDS MODULOS ============ */
+
+.modulos-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 12px;
+  max-width: 1300px;
+  margin: 0 auto;
+  padding: 150px 20px;
+}
+
+.modulo-card {
+  border-radius: 8px;
+  width: 600px;
+  overflow: hidden;
+  background: #111;
+  border: 1px solid #1e1e1e;
+  text-decoration: none;
+  display: block;
+  transition: border-color 0.2s ease;
+}
+
+.modulo-card:hover {
+  border-color: #2a2a2a;
+}
+
+.modulo-card-img {
+  height: 360px;
+  overflow: hidden;
+  position: relative;
+}
+
+.modulo-card-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0.7;
+  transition: opacity 0.3s ease, transform 0.4s ease;
+}
+
+.modulo-card:hover .modulo-card-img img {
+  opacity: 1;
+  transform: scale(1.05);
+}
+
+.modulo-card-bar {
+  height: 3px;
+  background: #1e1e1e;
+  transition: background 0.2s ease;
+}
+
+.modulo-card:hover .modulo-card-bar {
+  background: var(--primary-color);
+}
+
+.modulo-card-body {
+  padding: 14px 16px;
+}
+
+.modulo-card-num {
+  font-size: 0.65rem;
+  color: var(--primary-color);
+  font-weight: 700;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  margin-bottom: 4px;
+}
+
+.modulo-card-title {
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 1.4rem;
+  color: #fff;
+  letter-spacing: 1.5px;
+  margin: 0 0 6px;
+  line-height: 1;
+}
+
+.modulo-card-desc {
+  font-size: 0.85rem;
+  color: #666;
+  margin: 0;
+  line-height: 1.5;
+}
+
+@media (max-width: 768px) {
+  .modulos-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .modulo-card-img {
+    height: 140px;
+  }
+}
+
+/* ============ videos e modulos ============ */
+
+
+.fund-page {
+  background: var(--dark-bg);
+  color: #e0e0e0;
+  min-height: 100vh;
+}
+
+.fund-page-title {
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: clamp(2.2rem, 5vw, 3.5rem);
+  letter-spacing: 5px;
+  color: #fff;
+  text-align: center;
+  padding: 3rem 1rem 1rem;
+  border-bottom: 3px solid var(--primary-color);
+  margin-bottom: 0;
+}
+
+.fund-intro {
+  max-width: 860px;
+  margin: 2.5rem auto;
+  padding: 1.5rem 2rem;
+  background: rgba(255,255,255,0.03);
+  border-left: 4px solid var(--primary-color);
+  border-radius: 0 8px 8px 0;
+  font-size: 0.97rem;
+  line-height: 1.8;
+  color: #bbb;
+}
+
+/* ========== COMANDOS ========== */
+
+.cmd-icon {
+    display: inline-block;
+    vertical-align: middle;
+    margin: 0 2px;
+}
+
+.cmd-icon img {
+    height: 32px; /* ajusta conforme o tamanho das suas imagens */
+    width: auto;
+}
+
+/* ========== SEÇÕES NUMERADAS ========== */
+
+.fund-sections {
+  max-width: 860px;
+  margin: 0 auto;
+  padding: 0 1.5rem 5rem;
+}
+
+.fund-section {
+  margin-bottom: 5rem;
+}
+
+.fund-section-header {
+  display: flex;
+  align-items: baseline;
+  gap: 16px;
+  margin-bottom: 1.5rem;
+  padding-bottom: 1rem;
+  border-bottom: 2px solid var(--primary-color);
+}
+
+.fund-section-num {
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 2.8rem;
+  color: var(--primary-color);
+  line-height: 1;
+  flex-shrink: 0;
+}
+
+.fund-section-title {
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 2rem;
+  color: #fff;
+  letter-spacing: 2px;
+  margin: 0;
+  line-height: 1;
+}
+
+/* ========== TEXTO ========== */
+
+.fund-text {
+  font-size: 1rem;
+  line-height: 1.8;
+  color: #aaa;
+  margin: 0 0 1.75rem;
+}
+
+/* ========== SUB-TÓPICO ========== */
+
+.fund-subtopic {
+  margin: 2.5rem 0;
+  padding-left: 1.25rem;
+  border-left: 3px solid var(--primary-color);
+}
+
+.fund-subtopic-tag {
+  display: inline-block;
+  background: var(--primary-color);
+  color: #fff;
+  font-size: 0.65rem;
+  font-weight: 700;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  padding: 4px 12px;
+  border-radius: 3px;
+  margin-bottom: 0.75rem;
+}
+
+.fund-subtopic-title {
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 1.5rem;
+  color: #fff;
+  letter-spacing: 1.5px;
+  margin: 0 0 1rem;
+}
+
+/* ========== VÍDEO INLINE ========== */
+
+.fund-video {
+  position: relative;
+  width: 100%;
+  margin: 1.75rem 0;
+  border-radius: 8px;
+  overflow: hidden;
+  background: #111;
+  cursor: pointer;
+}
+
+.fund-video img,
+.fund-video video {
+  width: 100%;
+  display: block;
+  border-radius: 8px;
+}
+
+.fund-video .thumb {
+  position: relative;
+  z-index: 1;
+  transition: opacity 0.4s ease;
+}
+
+.fund-video .preview {
+  position: absolute;
+  inset: 0;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0;
+  z-index: 2;
+  transition: opacity 0.4s ease;
+  border-radius: 8px;
+}
+
+.fund-video:hover .preview {
+  opacity: 1;
+}
+
+.fund-video:hover .thumb {
+  opacity: 0;
+}
+
+.fund-video-caption {
+  font-size: 0.78rem;
+  color: #555;
+  text-align: center;
+  margin-top: -1.25rem;
+  margin-bottom: 1.75rem;
+  font-style: italic;
+}
+
+/* ========== RESPONSIVO ========== */
+
+@media (max-width: 600px) {
+  .fund-section-num { font-size: 2rem; }
+  .fund-section-title { font-size: 1.5rem; }
+  .fund-subtopic { padding-left: 1rem; }
+}
+
+/* ========== MISSÕES ========== */
+
+.fund-missions {
+  max-width: 860px;
+  margin: 3rem auto 1rem;
+  padding: 2rem;
+  background: #181818;
+  border: 1px solid #2a2a2a;
+  border-radius: 10px;
+}
+
+.fund-missions-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 1.25rem;
+}
+
+
+.fund-missions-title {
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 1.5rem;
+  letter-spacing: 2px;
+  color: #fff;
+  margin: 0;
+}
+
+.fund-missions-desc {
+  font-size: 0.85rem;
+  color: #666;
+  margin-bottom: 1.25rem;
+  line-height: 1.6;
+}
+
+.fund-missions-desc strong {
+  font-weight: 500;
+  font-size: 20px;
+  color: #aaa; /* ou var(--primary-color) se quiser destaque sutil */
+}
+
+.fund-missions-count {
+  font-size: 0.8rem;
+  color: #666;
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+
+.fund-missions-desc .cmd-icon img {
+  height: 20px;
+}
+
+/* Barra de progresso */
+.fund-progress-bar {
+  width: 100%;
+  height: 6px;
+  background: #2a2a2a;
+  border-radius: 999px;
+  overflow: hidden;
+  margin-bottom: 0.5rem;
+  margin-top: 1.25rem;
+}
+
+.fund-progress-fill {
+  height: 100%;
+  background: var(--primary-color);
+  border-radius: 999px;
+  transition: width 0.5s ease;
+}
+
+.fund-progress-label {
+  font-size: 0.75rem;
+  color: #555;
+  margin-bottom: 1.5rem;
+  text-align: right;
+}
+
+/* Lista de missões */
+.fund-missions-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.fund-mission-item {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  padding: 12px 16px;
+  background: #111;
+  border: 1px solid #222;
+  border-radius: 8px;
+  transition: border-color 0.2s ease;
+}
+
+.fund-mission-item.concluida {
+  border-color: var(--primary-color);
+  opacity: 0.7;
+}
+
+.fund-mission-item.concluida .fund-mission-titulo {
+  text-decoration: line-through;
+  color: #555;
+}
+
+/* Checkbox customizado */
+.fund-mission-check {
+  position: relative;
+  flex-shrink: 0;
+}
+
+.fund-mission-check input[type="checkbox"] {
+  position: absolute;
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.fund-mission-check label {
+  display: block;
+  cursor: pointer;
+}
+
+.checkmark {
+  display: block;
+  width: 22px;
+  height: 22px;
+  border: 2px solid #333;
+  border-radius: 5px;
+  transition: all 0.2s ease;
+  position: relative;
+}
+
+.fund-mission-check input:checked ~ label .checkmark {
+  background: var(--primary-color);
+  border-color: var(--primary-color);
+}
+
+.fund-mission-check input:checked ~ label .checkmark::after {
+  content: '';
+  position: absolute;
+  left: 5px;
+  top: 2px;
+  width: 6px;
+  height: 11px;
+  border: 2px solid #fff;
+  border-top: none;
+  border-left: none;
+  transform: rotate(45deg);
+}
+
+/* Corpo da missão */
+.fund-mission-body {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex: 1;
+  gap: 12px;
+}
+
+.fund-mission-titulo {
+  font-size: 0.93rem;
+  color: #ccc;
+  transition: color 0.2s, text-decoration 0.2s;
+}
+
+/* Badge de dificuldade */
+.fund-mission-dif {
+  font-size: 0.65rem;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  padding: 3px 10px;
+  border-radius: 3px;
+  flex-shrink: 0;
+}
+
+.fund-mission-dif.fácil,
+.fund-mission-dif.facil {
+  background: rgba(39, 174, 96, 0.15);
+  color: #27ae60;
+}
+
+.fund-mission-dif.médio,
+.fund-mission-dif.medio {
+  background: rgba(243, 156, 18, 0.15);
+  color: #f39c12;
+}
+
+.fund-mission-dif.difícil,
+.fund-mission-dif.dificil {
+  background: rgba(230, 48, 48, 0.15);
+  color: var(--primary-color);
+}
+
+/* Toast de ranking */
+.fund-rank-toast {
+  position: fixed;
+  bottom: 2rem;
+  right: 2rem;
+  background: var(--primary-color);
+  color: #fff;
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 1.1rem;
+  letter-spacing: 1.5px;
+  padding: 14px 24px;
+  border-radius: 8px;
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.3s ease, transform 0.3s ease;
+  pointer-events: none;
+  z-index: 9999;
+}
+
+.fund-rank-toast.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+
+.fund-mission-card {
+  background: #181818;
+  border: 1px solid #2a2a2a;
+  border-radius: 8px;
+  padding: 1rem 1.25rem;
+  margin: 1rem 0;
+}
+
+.fund-mission-hint {
+  font-size: 0.99rem;
+  color: #ccc;
+  margin: 0 0 0.75rem;
+  line-height: 1.5;
+}
+
+.fund-mission-hint .cmd-icon img {
+  height: 25px;
+}
+
+
+/* ========== SENHA ========== */
+
+.senha-wrapper {
+  position: relative;
+}
+
+.senha-wrapper input {
+  padding-right: 40px;
+}
+
+
+
+.senha-wrapper .olho {
+  position: absolute;
+  right: 12px;
+  bottom: 8px;  /* troca top/transform por bottom */
+  cursor: pointer;
+  color: #888;
+  font-size: 16px;
+}
+
+.senha-wrapper.login-senha .olho {
+  transform: translateX(26px) translateY(-26px);
+}
+
+.senha-wrapper.cadastro-senha .olho {
+  transform: translateX(45px) translateY(-90px); /* já existe pro input-control */
+}
+
+.senha-wrapper.cadastro-senha2 .olho {
+  transform: translateX(45px) translateY(-90px);
+}
+
+css.swal2-validation-message {
+  background-color: #1a1a1a;
+  color: #ff4d4d;
+  border: none;
+}

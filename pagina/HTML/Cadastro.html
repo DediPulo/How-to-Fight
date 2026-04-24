@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="utf-8">
+    <title>How to Fight</title>
+    
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+    <!-- Estilo Personalizado -->
+    <link rel="stylesheet" type="text/css" href="../CSS/estilo.css">
+
+    <script>
+
+            function validarCadastro() {
+            const senha = document.getElementById("senha").value;
+            const confirmar = document.getElementById("confirmar").value;
+            const nick = document.getElementById("nick").value;
+
+            const erroSenha = document.getElementById("erro-senha");
+            const erroConfirmar = document.getElementById("erro-confirmar");
+            const erroNick = document.getElementById("erro-nick");
+
+            // limpa mensagens
+            [erroSenha, erroConfirmar, erroNick].forEach(el => {
+                el.textContent = "";
+                el.classList.remove("show");
+            });
+
+
+            if (senha.length < 6) {
+                erroSenha.textContent = "A senha deve ter pelo menos 6 caracteres.";
+                erroSenha.classList.add("show");
+                return false;
+            }
+
+            if (senha !== confirmar) {
+                erroConfirmar.textContent = "As senhas não coincidem.";
+                erroConfirmar.classList.add("show");
+                return false;
+            }
+
+            if (nick.length < 3) {
+                erroNick.textContent = "O nick deve ter pelo menos 3 caracteres.";
+                erroNick.classList.add("show");
+                return false;
+            }
+
+                return true;
+            }
+
+    </script>
+
+    
+</head>
+
+<body>
+
+        <!-- INÍCIO DO CÓDIGO VLIBRAS -->
+    <div vw class="enabled">
+        <div vw-access-button class="active"></div>
+        <div vw-plugin-wrapper>
+            <div class="vw-plugin-top-wrapper"></div>
+        </div>
+    </div>
+    <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+    <script>
+        new window.VLibras.Widget('https://vlibras.gov.br/app');
+    </script>
+    <!-- FIM DO CÓDIGO VLIBRAS -->
+
+    <header class="htf-header">
+        <div class="header-container">
+            <div class="logo-brand">
+                <a href="./index.html">
+                    <img src="../Image/trabaio_do meu amor.png " alt="Logo">
+                </a>
+            </div>
+
+             <nav class="header-nav">
+                <a href="./Produtos.html" class="nav-link">Módulos</a>
+                <a href="./Sobre.html" class="nav-link">Sobre</a>
+                <a href="./Horarios.html" class="nav-link">Contato</a>
+            </nav>
+
+            <div class="header-actions">
+                <button class="btn-login" onclick="window.location.href='./login.html'">Login</button>
+                <button class="btn-signup" onclick="window.location.href='./Cadastro.html'">Cadastro</button>
+            </div>
+        </div>
+    </header>
+
+
+    <!-- Conteúdo Principal -->
+    <main class="cadastro-container2">
+        <form id="formCadastro" method="post" onsubmit="return validarCadastro()">
+            <fieldset class="cadastro">
+                <legend class="cadastro">Cadastro de Usuário</legend>
+
+                <div class="cadastro-container">
+                    <div class="form-group">
+                        <label for="nick" class="label-control2">Nickname</label>
+                        <input type="text" name="nick" id="nick" class="input-control2" placeholder="Digite seu Nick" required >
+                        <span id="erro-nick" class="erro-msg"></span>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email" class="label-control2">Email</label>
+                        <input type="email" name="email" id="email" class="input-control2" placeholder="Digite seu Email" required>
+                    </div>
+
+                    <div class="form-group senha-wrapper cadastro-senha">
+                        <label for="senha" class="label-control2">Senha</label>
+                        <input type="password" name="senha" id="senha" class="input-control2" placeholder="Digite sua senha" required>
+                        <i class="fa fa-eye olho" onclick="toggleSenha('senha', this)"></i>
+                    <span id="erro-senha" class="erro-msg"></span>
+                    </div>
+
+                    <div class="form-group senha-wrapper cadastro-senha2">
+                        <label for="confirmar" class="label-control2">Confirmar Senha</label>
+                        <input type="password" name="confirmar" id="confirmar" class="input-control2" placeholder="Confirme sua senha" required>
+                        <i class="fa fa-eye olho" onclick="toggleSenha('confirmar', this)"></i>
+                        <span id="erro-confirmar" class="erro-msg"></span>
+                    </div>
+                    
+                    <div class="checkbox-control">
+                        <label>
+                            <input type="checkbox" name="aceito" value="sim" required>
+                            <a>Aceito os </a>
+                            <a href="./Termos.html" target="_blank">termos de uso</a>
+                        </label>
+                    </div>
+
+                    <button type="submit" class="btn-signup2">Cadastrar</button>
+                </div>
+            </fieldset>
+        </form>
+    </main>
+
+    <!-- Rodapé -->
+    <footer class="htf-footer">
+      <div class="footer-container">
+        
+        <!-- Coluna 1: Logo -->
+        <div class="footer-column">
+            <div class="footer-logo">
+                <i class="fas fa-fist-raised"></i>
+                <h4>HOW TO FIGHT</h4>
+            </div>
+            <p class="tagline">Aprenda. Competa. Vença</p>
+        </div>
+
+        <!-- Coluna 2: Links Rápidos -->
+        <div class="footer-column">
+            <h5>Links Rápidos</h5>
+            <ul class="footer-links">
+                <li><a href="./index.html">Home</a></li>
+                <li><a href="./Produtos.html">Módulos</a></li>
+                <li><a href="./FAQ.html">FAQ</a></li>
+            </ul>
+        </div>
+
+        <!-- Coluna 3: Suporte -->
+        <div class="footer-column">
+            <h5>Suporte</h5>
+            <ul class="footer-links">
+                <li><a href="./Termos.html">Termos de Serviço</a></li>
+                <li><a href="./privacidade.html">Privacidade</a></li>
+                <li><a href="./Horarios.html">Contate-nos</a></li>
+            </ul>
+        </div>
+
+        <!-- Coluna 4: Redes Sociais -->
+        <div class="footer-column">
+            <h5>Siga-nos</h5>
+            <div class="social-icons">
+                <a href="https://facebook.com" target="_blank" title="Facebook">
+                    <i class="fab fa-facebook-f"></i>
+                </a>
+                <a href="https://instagram.com" target="_blank" title="Instagram">
+                    <i class="fab fa-instagram"></i>
+                </a>
+                <a href="https://discord.com" target="_blank" title="Discord">
+                    <i class="fab fa-discord"></i>
+                </a>
+                <a href="https://youtube.com" target="_blank" title="YouTube">
+                    <i class="fab fa-youtube"></i>
+                </a>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- Copyright -->
+    <div class="footer-bottom">
+        <p>&copy; 2026 How to Fight. Todos os direitos reservados.</p>
+    </div>
+</footer>
+    <!-- Scripts Bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+
+    <script>
+        
+            window.onload = function() {
+                document.getElementById("formCadastro").addEventListener("submit", async function(e) {
+                    e.preventDefault();
+                    if (!validarCadastro()) return;
+
+                    const formData = new FormData(this);
+                    const response = await fetch("/exercicios/banco/cadastro.php", {
+                        method: "POST",
+                        body: formData
+                    });
+                    const result = await response.json();
+                    console.log(result);
+                    if (result.status === "ok") {
+                        window.location.href = "/pagina/HTML/login.html?msg=" + encodeURIComponent(result.msg) + "&type=sucesso"; } 
+                    else {
+                        window.location.href = "/pagina/HTML/login.html?msg=" + encodeURIComponent(result.msg) + "&type=erro";
+                        }
+                });
+            };
+
+
+    function toggleSenha(id, icon) {
+    const input = document.getElementById(id);
+    input.type = input.type === 'password' ? 'text' : 'password';
+    icon.classList.toggle('fa-eye');
+    icon.classList.toggle('fa-eye-slash');
+    }
+    </script>
+</body>
+
+</html>

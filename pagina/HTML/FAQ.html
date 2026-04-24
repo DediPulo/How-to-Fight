@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="utf-8">
+    <title>How to Fight</title>
+
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+    <!-- Estilo Personalizado -->
+    <link rel="stylesheet" type="text/css" href="../CSS/estilo.css">
+</head>
+
+<body>
+
+    <!-- INÍCIO DO CÓDIGO VLIBRAS -->
+    <div vw class="enabled">
+        <div vw-access-button class="active"></div>
+        <div vw-plugin-wrapper>
+            <div class="vw-plugin-top-wrapper"></div>
+        </div>
+    </div>
+    <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+    <script>
+        new window.VLibras.Widget('https://vlibras.gov.br/app');
+    </script>
+    <!-- FIM DO CÓDIGO VLIBRAS -->
+
+    <header class="htf-header">
+        <div class="header-container">
+            <div class="logo-brand">
+                <a href="./index.html">
+                    <img src="../Image/trabaio_do meu amor.png " alt="Logo">
+                </a>
+            </div>
+
+            <nav class="header-nav">
+                <a href="./Produtos.html" class="nav-link">Módulos</a>
+                <a href="./Sobre.html" class="nav-link">Sobre</a>
+                <a href="./Horarios.html" class="nav-link">Contato</a>
+            </nav>
+
+            <div class="header-actions">
+                <button class="btn-login" onclick="window.location.href='./login.html'">Login</button>
+                <button class="btn-signup" onclick="window.location.href='./Cadastro.html'">Cadastro</button>
+            </div>
+        </div>
+    </header>
+
+    <main class="faq-main bg-dark text-white py-5">
+        <h1 class="text-center mb-4">Questões Frequentes</h1>
+
+        <div class="accordion" id="faqAccordion">
+
+            <!-- Pergunta 1 -->
+            <div class="accordion-item bg-dark text-white">
+                <h2 class="accordion-header" id="headingOne">
+                    <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                        Que tipo de jogo e luta será ensinado?
+                    </button>
+                </h2>
+                <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
+                    data-bs-parent="#faqAccordion">
+                    <div class="accordion-body">
+                        Inicialmente, os alunos aprenderão apenas sobre <strong>Tekken 8</strong>; mais tarde, pretendo
+                        apresentar outros tipos de jogos de luta.
+                    </div>
+                </div>
+            </div>
+
+            <!-- Pergunta 2 -->
+            <div class="accordion-item bg-dark text-white">
+                <h2 class="accordion-header" id="headingTwo">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                        Como serão feitos os guias?
+                    </button>
+                </h2>
+                <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                    data-bs-parent="#faqAccordion">
+                    <div class="accordion-body">
+                        Os guias serão ensinados com a <strong>ação em si</strong> e também mostrando a visibilidade dos
+                        botões que estão sendo utilizados.
+                    </div>
+                </div>
+            </div>
+
+            <!-- Pergunta 3 -->
+            <div class="accordion-item bg-dark text-white">
+                <h2 class="accordion-header" id="headingThree">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                        No futuro, que tipos de lutas você pretende inserir?
+                    </button>
+                </h2>
+                <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                    data-bs-parent="#faqAccordion">
+                    <div class="accordion-body">
+                        Os planos incluem <strong>Street Fighter</strong> e <strong>Tag Team Fighting Games</strong>,
+                        dois estilos de luta completamente diferentes do que estará incluso inicialmente.
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </main>
+
+
+    <!-- Rodapé -->
+    <footer class="htf-footer">
+        <div class="footer-container">
+
+            <!-- Coluna 1: Logo -->
+            <div class="footer-column">
+                <div class="footer-logo">
+                    <i class="fas fa-fist-raised"></i>
+                    <h4>HOW TO FIGHT</h4>
+                </div>
+                <p class="tagline">Aprenda. Competa. Vença</p>
+            </div>
+
+            <!-- Coluna 2: Links Rápidos -->
+            <div class="footer-column">
+                <h5>Links Rápidos</h5>
+                <ul class="footer-links">
+                    <li><a href="./index.html">Home</a></li>
+                    <li><a href="./Produtos.html">Módulos</a></li>
+                    <li><a href="./FAQ.html">FAQ</a></li>
+                    <li><a href="./Horarios.html">Contato</a></li>
+                </ul>
+            </div>
+
+            <!-- Coluna 3: Suporte -->
+            <div class="footer-column">
+                <h5>Suporte</h5>
+                <ul class="footer-links">
+                    <li><a href="./Termos.html">Termos de Serviço</a></li>
+                    <li><a href="./privacidade.html">Privacidade</a></li>
+                    <li><a href="./Horarios.html">Contate-nos</a></li>
+                </ul>
+            </div>
+
+            <!-- Coluna 4: Redes Sociais -->
+            <div class="footer-column">
+                <h5>Siga-nos</h5>
+                <div class="social-icons">
+                    <a href="https://facebook.com" target="_blank" title="Facebook">
+                        <i class="fab fa-facebook-f"></i>
+                    </a>
+                    <a href="https://instagram.com" target="_blank" title="Instagram">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a href="https://discord.com" target="_blank" title="Discord">
+                        <i class="fab fa-discord"></i>
+                    </a>
+                    <a href="https://youtube.com" target="_blank" title="YouTube">
+                        <i class="fab fa-youtube"></i>
+                    </a>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- Copyright -->
+        <div class="footer-bottom">
+            <p>&copy; 2026 How to Fight. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+
+    <!-- Scripts Bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

@@ -1,0 +1,201 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #40a5cd;
+    font-family: Arial, sans-serif;
+}
+
+/* Header */
+header {
+    background-color:  #40a5cd;
+    padding: 10px;
+}
+
+/* Main */
+main {
+    background-color:  #40a5cd;
+    padding: 10px;
+    margin: 5%;
+}
+
+/* Footer */
+footer {
+    background-color: #343A40;
+}
+
+footer h4 {
+    font-size: 20px;
+}
+
+footer a {
+    margin-right: 10px;
+}
+
+.container-card{
+    display: flex;
+    flex-wrap: wrap; /* permite quebrar linha se faltar espaço */
+    gap: 20px; /* espaço entre os cards */
+    justify-content: center; /* centraliza os cards na horizontal */
+    padding: 20px;
+  }
+  
+  .item {
+    display: flex;
+    justify-content: center;
+  }
+  
+h5{
+    font-weight: bold;
+    text-align: center;
+
+}
+
+h1{
+    color: white;
+    text-align: center;
+}
+
+label {
+    color: white;
+}
+
+fieldset {
+    border: 2px solid #ccc; /* borda visível */
+    border-radius: 6px;
+    padding: 20px 20px 25px;
+    position: relative;
+  }
+  
+  legend {
+    font-size: 1.2rem;
+    font-weight: bold;
+    text-shadow:#333435;
+    color: white;
+    padding: 0 10px;
+    position: relative;
+    top: -35px; /* sobe o texto para encaixar na borda */
+    left: 10px;
+    background: none; /* remove fundo */
+    z-index: 1;
+  }
+  
+  /* esse truque usa o fundo do container para "apagar" parte da linha atrás do texto */
+  legend::before {
+    content: "";
+    position: absolute;
+    left: 5px;
+    right: 0;
+    top: 5%;
+    height: 1.2em; /* altura aproximada da fonte */
+    background-color: #911915; /* mesma cor do fundo do form */
+    z-index: -1;
+    width: 200px;
+  }
+
+.accordion-button
+{
+    color: rgb(255, 255, 255);
+    background-color: #333435;
+}
+
+.accordion-button:focus {
+    box-shadow: none;
+  }
+
+  /* Styling for the active (open) accordion button */
+.accordion-button:not(.collapsed) {
+    background-color: #333435;
+    color: white;
+    /* Add other styles as needed */
+}
+
+.coluna-texto {
+    flex: 1; /* Faz a coluna ocupar metade do espaço (50%) */
+    background-color: #212529;
+    
+    /* Centraliza o conteúdo (o h1) vertical e horizontalmente */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px;
+    
+
+}
+
+.coluna-texto h1 {
+    font-size: 3.5rem; /* Tamanho da fonte */
+    color: #ffffff; /* Cor do texto (cinza escuro) */
+    font-weight: 400; /* Peso da fonte */
+}
+
+/* --- Coluna da Direita (Imagem) --- */
+.coluna-imagem {
+    flex: 1; /* Faz a coluna ocupar a outra metade do espaço (50%) */
+    background-color: #212529;
+}
+
+.coluna-imagem img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Faz a imagem cobrir todo o espaço da coluna sem distorcer */
+    background-color: #212529;
+}
+
+strong {
+    font-size: 25px;
+    color: white
+}
+
+.container2 {
+    display: flex;
+    width: 100%;
+    background-color: #4b4f53;
+}
+
+h3 {
+    font-size: 40px;
+    font-weight: bold;
+    color: white;
+}
+
+pre, h2 {
+    font-size: 20px;
+    font-weight: bold;
+    color: white;
+}
+
+.brand-move h2 {
+    font-size: 25px;
+    font-weight: bold;
+    color: white;
+    margin:0;
+    transform: translateX(-20px);
+}
+
+.brand-move{
+  display: flex;
+  align-items: center;
+  gap: 1px;         
+  transform: translateX(100px);    /* move o icone + texto do meio pra direita ou esquerda */
+  
+}
+
+.btn-ask{
+    background-color: #18566f;
+    color:#ffffff;
+    border: none;   /* remove a borda padrão */
+    padding: 8px 16px; /* espaço interno (altura x largura) */
+    border-radius: 10px;    /* arredonda os cantos */
+    cursor: pointer; /* isso faz o mouse virar icnoe de clicavel? */
+}
+
+.about-text{
+
+  font-family: "Inter", sans-serif;
+  font-size: 20px;
+  line-height: 1.6;
+}

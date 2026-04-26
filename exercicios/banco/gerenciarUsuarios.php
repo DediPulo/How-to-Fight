@@ -47,6 +47,30 @@ if ($acao === 'deletar') {
         exit;
     }
 
+   if ($acao === 'deletar') {
+    $id = (int) $_POST['id_usuario'];
+    
+    if ($id == (int) $_SESSION['id_usuario']) {
+        echo json_encode(["status" => "erro", "msg" => "Você não pode deletar sua própria conta por aqui!"]);
+        exit;
+    }
+
+    $check = $conn->prepare("SELECT isAdm FROM usuarios WHERE id_usuario = ?");
+    $check->bind_param("i", $id);
+    $check->execute();
+    $alvo = $check->get_result()->fetch_assoc();
+
+    if ($alvo['isAdm'] == 1) {
+        echo json_encode(["status" => "erro", "msg" => "Não é possível deletar outro administrador!"]);
+        exit;
+    }
+
+    // deleta o progresso primeiro
+    $stmt = $conn->prepare("DELETE FROM progresso WHERE id_usuario = ?");
+    $stmt->bind_param("i", $id);
+    $stmt->execute();
+
+    // agora deleta o usuário
     $stmt = $conn->prepare("DELETE FROM usuarios WHERE id_usuario = ?");
     $stmt->bind_param("i", $id);
     $stmt->execute();

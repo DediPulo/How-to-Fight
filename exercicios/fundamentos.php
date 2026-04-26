@@ -48,8 +48,8 @@ function cmd($nome) {
 
       <!-- Vídeo: movimentação geral -->
       <div class="fund-video">
-        <img src="../pagina/Image/padrao.png" alt="Movimentação básica" class="thumb">
-        <video class="preview" src="../pagina/videos/movement.mp4" muted loop></video>
+        <img src="https://github.com/DediPulo/How-to-Fight/raw/main/pagina/Image/padrao.png" alt="Movimentação básica" class="thumb">
+        <video class="preview" src="https://github.com/DediPulo/How-to-Fight/raw/main/pagina/videos/modulo%201/movement.mp4" muted loop></video>
       </div>
       <p class="fund-video-caption">Demonstração de movimentação básica no neutro</p>
 
@@ -88,8 +88,8 @@ function cmd($nome) {
 
       <!-- Vídeo: bloqueio -->
       <div class="fund-video">
-        <img src="../pagina/Image/padrao.png" alt="Defesa e bloqueio" class="thumb">
-        <video class="preview" src="../pagina/videos/blockfail.mp4" muted loop></video>
+        <img src="https://github.com/DediPulo/How-to-Fight/raw/main/pagina/Image/padrao.png" alt="Defesa e bloqueio" class="thumb">
+        <video class="preview" src="https://github.com/DediPulo/How-to-Fight/raw/main/pagina/videos/modulo%201/blockfail.mp4" muted loop></video>
       </div>
       <p class="fund-video-caption">Demonstração de bloqueios</p>
 
@@ -127,8 +127,8 @@ function cmd($nome) {
 
         <!-- Vídeo: side step -->
         <div class="fund-video">
-          <img src="../pagina/Image/padrao.png" alt="Attack Property" class="thumb">
-          <video class="preview" src="../pagina/videos/blocks.mp4" muted loop></video>
+          <img src="https://github.com/DediPulo/How-to-Fight/raw/main/pagina/Image/padrao.png" alt="Attack Property" class="thumb">
+          <video class="preview" src="https://github.com/DediPulo/How-to-Fight/raw/main/pagina/videos/modulo%201/blocks.mp4" muted loop></video>
         </div>
         <p class="fund-video-caption">todas propriedades bloqueadas</p>
 
@@ -139,8 +139,8 @@ function cmd($nome) {
 
         <!-- Vídeo: High -->
         <div class="fund-video">
-          <img src="../pagina/Image/padrao.png" alt="Attack Property" class="thumb">
-          <video class="preview" src="../pagina/videos/blockhigh.mp4" muted loop></video>
+          <img src="https://github.com/DediPulo/How-to-Fight/raw/main/pagina/Image/padrao.png" alt="Attack Property" class="thumb">
+          <video class="preview" src="https://github.com/DediPulo/How-to-Fight/raw/main/pagina/videos/modulo%201/blockhigh.mp4" muted loop></video>
         </div>
         <p class="fund-video-caption">High sendo evadido</p>
 
@@ -152,8 +152,8 @@ function cmd($nome) {
 
         <!-- Vídeo: Mid -->
         <div class="fund-video">
-          <img src="../pagina/Image/padrao.png" alt="Attack Property" class="thumb">
-          <video class="preview" src="../pagina/videos/failhigh.mp4" muted loop></video>
+          <img src="https://github.com/DediPulo/How-to-Fight/raw/main/pagina/Image/padrao.png" alt="Attack Property" class="thumb">
+          <video class="preview" src="https://github.com/DediPulo/How-to-Fight/raw/main/pagina/videos/modulo%201/failhigh.mp4" muted loop></video>
         </div>
         <p class="fund-video-caption">Mid sendo utilizado</p>
 
@@ -189,8 +189,8 @@ function cmd($nome) {
 
       <!-- Vídeo: Sidestep -->
       <div class="fund-video">
-        <img src="../pagina/Image/padrao.png" alt="Sidestep" class="thumb">
-        <video class="preview" src="../pagina/videos/sidestep.mp4" muted loop></video>
+        <img src="https://github.com/DediPulo/How-to-Fight/raw/main/pagina/Image/padrao.png" alt="Sidestep" class="thumb">
+        <video class="preview" src="https://github.com/DediPulo/How-to-Fight/raw/main/pagina/videos/modulo%201/sidestep.mp4" muted loop></video>
       </div>
       <p class="fund-video-caption">demonstração de sidestep</p>
 
@@ -206,8 +206,8 @@ function cmd($nome) {
         </p>
 
         <div class="fund-video">
-          <img src="../pagina/Image/padrao.png" alt="Sidestep" class="thumb">
-          <video class="preview" src="../pagina/videos/sidestepsu.mp4" muted loop></video>
+          <img src="https://github.com/DediPulo/How-to-Fight/raw/main/pagina/Image/padrao.png" alt="Sidestep" class="thumb">
+          <video class="preview" src="https://github.com/DediPulo/How-to-Fight/raw/main/pagina/videos/modulo%201/sidestepsu.mp4" muted loop></video>
         </div>
         <p class="fund-video-caption">demonstração de sidestep</p>
 
@@ -217,8 +217,8 @@ function cmd($nome) {
         </p>
 
         <div class="fund-video">
-          <img src="../pagina/Image/padrao.png" alt="Side step fail" class="thumb">
-          <video class="preview" src="../pagina/videos/sidewalkfa.mp4" muted loop></video>
+          <img src="https://github.com/DediPulo/How-to-Fight/raw/main/pagina/Image/padrao.png" alt="Side step fail" class="thumb">
+          <video class="preview" src="https://github.com/DediPulo/How-to-Fight/raw/main/pagina/videos/modulo%201/sidewalkfa.mp4" muted loop></video>
         </div>
         <p class="fund-video-caption">demonstração de sidestep falhando</p>
 
@@ -232,8 +232,8 @@ function cmd($nome) {
       </p>
 
       <div class="fund-video">
-        <img src="../pagina/Image/padrao.png" alt="Side walk" class="thumb">
-        <video class="preview" src="../pagina/videos/sidewalk.mp4" muted loop></video>
+        <img src="https://github.com/DediPulo/How-to-Fight/raw/main/pagina/Image/padrao.png" alt="Side walk" class="thumb">
+        <video class="preview" src="https://github.com/DediPulo/How-to-Fight/raw/main/pagina/videos/modulo%201/sidewalk.mp4" muted loop></video>
       </div>
       <p class="fund-video-caption">demonstração de side walk</p>
 
@@ -247,8 +247,8 @@ function cmd($nome) {
         </p>
 
         <div class="fund-video">
-          <img src="../pagina/Image/padrao.png" alt="Side walk success" class="thumb">
-          <video class="preview" src="../pagina/videos/sidewalksu.mp4" muted loop></video>
+          <img src="https://github.com/DediPulo/How-to-Fight/raw/main/pagina/Image/padrao.png" alt="Side walk success" class="thumb">
+          <video class="preview" src="https://github.com/DediPulo/How-to-Fight/raw/main/pagina/videos/modulo%201/sidewalksu.mp4" muted loop></video>
         </div>
         <p class="fund-video-caption">demonstração de side walk</p>
 
@@ -263,8 +263,8 @@ function cmd($nome) {
       </p>
 
       <div class="fund-video">
-        <img src="../pagina/Image/padrao.png" alt="Armor" class="thumb">
-        <video class="preview" src="../pagina/videos/armor.mp4" muted loop></video>
+        <img src="https://github.com/DediPulo/How-to-Fight/raw/main/pagina/Image/padrao.png" alt="armor" class="thumb">
+        <video class="preview" src="https://github.com/DediPulo/How-to-Fight/raw/main/pagina/videos/modulo%201/armor.mp4" muted loop></video>
       </div>
       <p class="fund-video-caption">demonstração de armadura agindo</p>
 
@@ -279,8 +279,8 @@ function cmd($nome) {
         </p>
 
         <div class="fund-video">
-          <img src="../pagina/Image/padrao.png" alt="Side Armor Fail" class="thumb">
-          <video class="preview" src="../pagina/videos/armorF.mp4" muted loop></video>
+          <img src="https://github.com/DediPulo/How-to-Fight/raw/main/pagina/Image/padrao.png" alt="Fracasso da armadura" class="thumb">
+          <video class="preview" src="https://github.com/DediPulo/How-to-Fight/raw/main/pagina/videos/modulo%201/armorF.mp4" muted loop></video>
         </div>
         <p class="fund-video-caption">demonstração das fraquezas da armadura</p>
 

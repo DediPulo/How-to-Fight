@@ -12,7 +12,12 @@ if (!isset($_SESSION['id_usuario'])) {
 
 $idUsuario = $_SESSION['id_usuario'];
 
-// deleta o usuário
+// deleta o progresso primeiro
+$stmt = $conn->prepare("DELETE FROM progresso WHERE id_usuario = ?");
+$stmt->bind_param("i", $idUsuario);
+$stmt->execute();
+
+// agora deleta o usuário
 $sql = "DELETE FROM usuarios WHERE id_usuario = ?";
 $stmt = $conn->prepare($sql);
 $stmt->bind_param("i", $idUsuario);
@@ -24,5 +29,3 @@ if ($stmt->execute()) {
     echo json_encode(["status" => "erro", "msg" => "Não foi possível deletar o perfil."]);
 }
 
-$stmt->close();
-$conn->close();

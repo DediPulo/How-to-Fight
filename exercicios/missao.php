@@ -13,7 +13,10 @@ $missoes = $conn->query("SELECT * FROM missoes WHERE id_modulo = $id_modulo_atua
 // Busca missões já concluídas pelo usuário
 $feitas_res = $conn->query("
     SELECT p.id_missao FROM progresso p
-    WHERE p.id_usuario = $id_usuario AND p.status = 'concluido'
+    JOIN missoes m ON m.id_missao = p.id_missao
+    WHERE p.id_usuario = $id_usuario 
+      AND m.id_modulo = $id_modulo_atual
+      AND p.status = 'concluido'
 ");
 $feitas = [];
 while ($f = $feitas_res->fetch_assoc()) {
@@ -43,9 +46,9 @@ $titulos = [
   Para completar as missões, vá em <strong>Modo Treino</strong> no menu principal. 
   Selecione seu personagem, e após entrar no treino, abra o menu, vá em configuração de treino, mude o modo de treino 
   para defesa, e selecione/grave as seguintes ações:<br>
-  ação 1: Slaughter Hook <br>
-  ação 2: <?=cmd('training2')?> <br>
-  ação 3: <?=cmd('training1')?> <br>
+  ação 1: <?=cmd('SHook')?> <br>
+  ação 2: <?=cmd('training1')?> <br>
+  ação 3: <?=cmd('training2')?> <br>
   após isso, ajuste a frequência de ações para que apenas uma ação por vez possa agir. <br>
   (em caso do kazuya estar no lado direito, só inverter a direção dos comandos)
 </p>

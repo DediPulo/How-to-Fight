@@ -15,7 +15,7 @@
         <!-- imagem principal -->
         <section class="container-card mb-5">
             <div id="img-tekke" alt="Logo">
-                <img src="../pagina/Image/tekken-8-jin-kazama-3840x2160-18767.jpg">
+                <img src="https://github.com/DediPulo/How-to-Fight/raw/main/pagina/Image/tekken-8-jin-kazama-3840x2160-18767.jpg">
             </div>
         </section>
 

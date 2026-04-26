@@ -36,8 +36,8 @@ function cmd($nome) {
             </p>
 
             <div class="fund-video">
-                <img src="../pagina/Image/padrao2.png" alt="Ataques básicos" class="thumb">
-                <video class="preview" src="../pagina/videos/ataques.mp4" muted loop></video>
+                <img src="https://github.com/DediPulo/How-to-Fight/raw/main/pagina/Image/padrao2.png" alt="Ataques básicos" class="thumb">
+                <video class="preview" src="https://github.com/DediPulo/How-to-Fight/raw/main/pagina/videos/modulo%202/ataques.mp4" muted loop></video>
             </div>
             <p class="fund-video-caption">Demonstração de ataques básicos</p>
 
@@ -56,8 +56,8 @@ function cmd($nome) {
             </p>
 
             <div class="fund-video">
-                <img src="../pagina/Image/padrao2.png" alt="Ataques com direções" class="thumb">
-                <video class="preview" src="../pagina/videos/ataquesdif.mp4" muted loop></video>
+                <img src="https://github.com/DediPulo/How-to-Fight/raw/main/pagina/Image/padrao2.png" alt="Ataques básicos" class="thumb">
+                <video class="preview" src="https://github.com/DediPulo/How-to-Fight/raw/main/pagina/videos/modulo%202/ataquesdif.mp4" muted loop></video>
             </div>
             <p class="fund-video-caption">Demonstração de ataques básicos</p>
             
@@ -76,8 +76,8 @@ function cmd($nome) {
             </p>
 
             <div class="fund-video">
-                <img src="../pagina/Image/padrao2.png" alt="Ataques em estados diferentes" class="thumb">
-                <video class="preview" src="../pagina/videos/states.mp4" muted loop></video>
+                <img src="https://github.com/DediPulo/How-to-Fight/raw/main/pagina/Image/padrao2.png" alt="Ataques básicos" class="thumb">
+                <video class="preview" src="https://github.com/DediPulo/How-to-Fight/raw/main/pagina/videos/modulo%202/states.mp4" muted loop></video>
             </div>
             <p class="fund-video-caption">Demonstração dos diferentes estados</p>
 
@@ -107,8 +107,8 @@ function cmd($nome) {
             </p>
 
             <div class="fund-video">
-                <img src="../pagina/Image/padrao2.png" alt="Strings" class="thumb">
-                <video class="preview" src="../pagina/videos/string.mp4" muted loop></video>
+                <img src="https://github.com/DediPulo/How-to-Fight/raw/main/pagina/Image/padrao2.png" alt="Ataques básicos" class="thumb">
+                <video class="preview" src="https://github.com/DediPulo/How-to-Fight/raw/main/pagina/videos/modulo%202/string.mp4" muted loop></video>
             </div>
             <p class="fund-video-caption">Demonstração de strings</p>
 
@@ -128,8 +128,8 @@ function cmd($nome) {
             </p>
 
             <div class="fund-video">
-                <img src="../pagina/Image/padrao2.png" alt="Ataques em estados diferentes" class="thumb">
-                <video class="preview" src="../pagina/videos/stringfail.mp4" muted loop></video>
+                <img src="https://github.com/DediPulo/How-to-Fight/raw/main/pagina/Image/padrao2.png" alt="Ataques básicos" class="thumb">
+                <video class="preview" src="https://github.com/DediPulo/How-to-Fight/raw/main/pagina/videos/modulo%202/stringfail.mp4" muted loop></video>
             </div>
             <p class="fund-video-caption">Demonstração de string</p>
 
@@ -159,8 +159,8 @@ function cmd($nome) {
             </p>
 
             <div class="fund-video">
-                <img src="../pagina/Image/padrao2.png" alt="grabs" class="thumb">
-                <video class="preview" src="../pagina/videos/grabs.mp4" muted loop></video>
+                <img src="https://github.com/DediPulo/How-to-Fight/raw/main/pagina/Image/padrao2.png" alt="Ataques básicos" class="thumb">
+                <video class="preview" src="https://github.com/DediPulo/How-to-Fight/raw/main/pagina/videos/modulo%202/grabs.mp4" muted loop></video>
             </div>
             <p class="fund-video-caption">Demonstração de grabs</p>
 
@@ -175,8 +175,8 @@ function cmd($nome) {
             </p>
 
             <div class="fund-video">
-                <img src="../pagina/Image/padrao2.png" alt="grabs" class="thumb">
-                <video class="preview" src="../pagina/videos/grabfail.mp4" muted loop></video>
+                <img src="https://github.com/DediPulo/How-to-Fight/raw/main/pagina/Image/padrao2.png" alt="Ataques básicos" class="thumb">
+                <video class="preview" src="https://github.com/DediPulo/How-to-Fight/raw/main/pagina/videos/modulo%202/grabfail.mp4" muted loop></video>
             </div>
             <p class="fund-video-caption">Tech grab</p>
 
@@ -186,8 +186,8 @@ function cmd($nome) {
             </p>
 
             <div class="fund-video">
-                <img src="../pagina/Image/padrao2.png" alt="grabs" class="thumb">
-                <video class="preview" src="../pagina/videos/grabdodge.mp4" muted loop></video>
+                <img src="https://github.com/DediPulo/How-to-Fight/raw/main/pagina/Image/padrao2.png" alt="Ataques básicos" class="thumb">
+                <video class="preview" src="https://github.com/DediPulo/How-to-Fight/raw/main/pagina/videos/modulo%202/grabdodge.mp4" muted loop></video>
             </div>
             <p class="fund-video-caption">duck no grab</p>
 
@@ -208,8 +208,8 @@ function cmd($nome) {
 
 
         <div class="fund-video">
-            <img src="../pagina/Image/padrao2.png" alt="grabs especiais" class="thumb">
-            <video class="preview" src="../pagina/videos/exgrab.mp4" muted loop></video>
+            <img src="https://github.com/DediPulo/How-to-Fight/raw/main/pagina/Image/padrao2.png" alt="Ataques básicos" class="thumb">
+            <video class="preview" src="https://github.com/DediPulo/How-to-Fight/raw/main/pagina/videos/modulo%202/exgrab.mp4" muted loop></video>
         </div>
         <p class="fund-video-caption">grabs diferentes</p>
 
@@ -263,8 +263,8 @@ function cmd($nome) {
         </p>
 
         <div class="fund-video">
-            <img src="../pagina/Image/padrao2.png" alt="launchers" class="thumb">
-            <video class="preview" src="../pagina/videos/launchers.mp4" muted loop></video>
+            <img src="https://github.com/DediPulo/How-to-Fight/raw/main/pagina/Image/padrao2.png" alt="Ataques básicos" class="thumb">
+            <video class="preview" src="https://github.com/DediPulo/How-to-Fight/raw/main/pagina/videos/modulo%202/launchers.mp4" muted loop></video>
         </div>
         <p class="fund-video-caption">demonstração de launchers</p>
 
@@ -288,8 +288,8 @@ function cmd($nome) {
         </p>
 
          <div class="fund-video">
-            <img src="../pagina/Image/padrao2.png" alt=" chlaunchers" class="thumb">
-            <video class="preview" src="../pagina/videos/chlaunch.mp4" muted loop></video>
+            <img src="https://github.com/DediPulo/How-to-Fight/raw/main/pagina/Image/padrao2.png" alt="Ataques básicos" class="thumb">
+            <video class="preview" src="https://github.com/DediPulo/How-to-Fight/raw/main/pagina/videos/modulo%202/chlaunch.mp4" muted loop></video>
         </div>
         <p class="fund-video-caption">demonstração de launchers</p>
 
@@ -308,8 +308,8 @@ function cmd($nome) {
         </p>
 
         <div class="fund-video">
-            <img src="../pagina/Image/padrao2.png" alt=" fillers" class="thumb">
-            <video class="preview" src="../pagina/videos/filler.mp4" muted loop></video>
+            <img src="https://github.com/DediPulo/How-to-Fight/raw/main/pagina/Image/padrao2.png" alt="Ataques básicos" class="thumb">
+            <video class="preview" src="https://github.com/DediPulo/How-to-Fight/raw/main/pagina/videos/modulo%202/filler.mp4" muted loop></video>
         </div>
         <p class="fund-video-caption">demonstração de fillers</p>
 
@@ -325,8 +325,8 @@ function cmd($nome) {
         </p>
 
         <div class="fund-video">
-            <img src="../pagina/Image/padrao2.png" alt=" extender" class="thumb">
-            <video class="preview" src="../pagina/videos/extender.mp4" muted loop></video>
+            <img src="https://github.com/DediPulo/How-to-Fight/raw/main/pagina/Image/padrao2.png" alt="Ataques básicos" class="thumb">
+            <video class="preview" src="https://github.com/DediPulo/How-to-Fight/raw/main/pagina/videos/modulo%202/extender.mp4" muted loop></video>
         </div>
         <p class="fund-video-caption">demonstração de extenders</p>
 
@@ -343,8 +343,8 @@ function cmd($nome) {
         </p>
 
         <div class="fund-video">
-            <img src="../pagina/Image/jinside.png" alt=" ender" class="thumb">
-            <video class="preview" src="../pagina/videos/ender.mp4" muted loop></video>
+            <img src="https://github.com/DediPulo/How-to-Fight/raw/main/pagina/Image/jinside.png" alt="Ataques básicos" class="thumb">
+            <video class="preview" src="https://github.com/DediPulo/How-to-Fight/raw/main/pagina/videos/modulo%202/ender.mp4" muted loop></video>
         </div>
         <p class="fund-video-caption">demonstração de enders</p>
 
@@ -364,8 +364,8 @@ function cmd($nome) {
         </p>
 
          <div class="fund-video">
-            <img src="../pagina/Image/padrao2.png" alt=" combo1" class="thumb">
-            <video class="preview" src="../pagina/videos/combo1.mp4" muted loop></video>
+            <img src="https://github.com/DediPulo/How-to-Fight/raw/main/pagina/Image/padrao2.png" alt="Ataques básicos" class="thumb">
+            <video class="preview" src="https://github.com/DediPulo/How-to-Fight/raw/main/pagina/videos/modulo%202/combo1.mp4" muted loop></video>
         </div>
         <p class="fund-video-caption">demonstração de combo</p>
 
@@ -377,8 +377,8 @@ function cmd($nome) {
         </p>
 
         <div class="fund-video">
-            <img src="../pagina/Image/sideclive.png" alt=" combo1" class="thumb">
-            <video class="preview" src="../pagina/videos/combo2.mp4" muted loop></video>
+            <img src="https://github.com/DediPulo/How-to-Fight/raw/main/pagina/Image/sideclive.png" alt="Ataques básicos" class="thumb">
+            <video class="preview" src="https://github.com/DediPulo/How-to-Fight/raw/main/pagina/videos/modulo%202/combo2.mp4" muted loop></video>
         </div>
         <p class="fund-video-caption">demonstração de combo 2</p>
 
@@ -417,8 +417,8 @@ function cmd($nome) {
         </p>
 
         <div class="fund-video">
-            <img src="../pagina/Image/padrao2.png" alt="condição" class="thumb">
-            <video class="preview" src="../pagina/videos/condition.mp4" muted loop></video>
+            <img src="https://github.com/DediPulo/How-to-Fight/raw/main/pagina/Image/padrao2.png" alt="Ataques básicos" class="thumb">
+            <video class="preview" src="https://github.com/DediPulo/How-to-Fight/raw/main/pagina/videos/modulo%202/condition.mp4" muted loop></video>
         </div>
         <p class="fund-video-caption">demonstração de condicionamento</p>
 
@@ -430,8 +430,8 @@ function cmd($nome) {
         </p>
 
         <div class="fund-video">
-            <img src="../pagina/Image/padrao2.png" alt="defesas fundamentais" class="thumb">
-            <video class="preview" src="../pagina/videos/sideduck.mp4" muted loop></video>
+            <img src="https://github.com/DediPulo/How-to-Fight/raw/main/pagina/Image/padrao2.png" alt="Ataques básicos" class="thumb">
+            <video class="preview" src="https://github.com/DediPulo/How-to-Fight/raw/main/pagina/videos/modulo%202/sideduck.mp4" muted loop></video>
         </div>
         <p class="fund-video-caption">demonstração de fundamentos</p>
 
@@ -449,8 +449,8 @@ function cmd($nome) {
         </p>
 
         <div class="fund-video">
-            <img src="../pagina/Image/padrao2.png" alt="defesas fundamentais" class="thumb">
-            <video class="preview" src="../pagina/videos/punish.mp4" muted loop></video>
+            <img src="https://github.com/DediPulo/How-to-Fight/raw/main/pagina/Image/padrao2.png" alt="Ataques básicos" class="thumb">
+            <video class="preview" src="https://github.com/DediPulo/How-to-Fight/raw/main/pagina/videos/modulo%202/punish.mp4" muted loop></video>
         </div>
         <p class="fund-video-caption">demonstração de punições</p>
 
